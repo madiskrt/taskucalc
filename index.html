@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="parking price widget added by Madis Kaaret">
+    <meta id="viewport" name='viewport'>
+	<script>
+    (function(doc) {
+        var viewport = document.getElementById('viewport');
+        if ( navigator.userAgent.match(/Android|webOS|iPhone|Windows Phone/i) || navigator.userAgent.match(/iPod/i)) {
+            viewport.setAttribute("content", "initial-scale=0");
+        } else if ( navigator.userAgent.match(/iPad/i) ) {
+            viewport.setAttribute("content", "initial-scale=0.7");
+        }
+    }(document));
+	</script>
+    <title>Parkimine | Tasku</title>
+    		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/tasku.ee\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.8"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 .07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+				}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://tasku.ee/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css'  href='http://tasku.ee/wp-content/plugins/popup-maker/assets/css/site.min.css?ver=1.4.18' type='text/css' media='all' />
+<link rel='stylesheet' id='tasku-style-css'  href='http://tasku.ee/wp-content/themes/tasku/style.css?ver=2014-10-02_2' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-css'  href='http://tasku.ee/wp-content/themes/tasku/css/magnific-popup.css?ver=4.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='google-font-css'  href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700&#038;ver=4.3.8' type='text/css' media='all' />
+<script type='text/javascript' src='http://tasku.ee/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=4.3.8'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/themes/tasku/js/jcarousel.offer.js?ver=4.3.8'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/themes/tasku/js/jcarousel.min.js?ver=4.3.8'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js?ver=4.3.8'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/themes/tasku/js/jcarousel.responsive.js?ver=4.3.8'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=4.3.8'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/themes/tasku/js/scripts.js?ver=4.3.8'></script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/themes/tasku/js/jquery.magnific-popup.min.js?ver=4.3.8'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://tasku.ee/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://tasku.ee/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.8" />
+<link rel='canonical' href='http://tasku.ee/parkimine/' />
+<link rel='shortlink' href='http://tasku.ee/?p=12' />
+    <style id="pum-styles" type="text/css">
+    /* Popup Theme 14185: Default Theme */
+.pum-theme-14185, .pum-theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.pum-theme-14185 .pum-container, .pum-theme-default-theme .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14185 .pum-title, .pum-theme-default-theme .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-14185 .pum-content, .pum-theme-default-theme .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-14185 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+/* Popup Theme 14186: Light Box */
+.pum-theme-14186, .pum-theme-lightbox { background-color: rgba( 255, 255, 255, 1 ) } 
+.pum-theme-14186 .pum-container, .pum-theme-lightbox .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14186 .pum-title, .pum-theme-lightbox .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-14186 .pum-content, .pum-theme-lightbox .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-14186 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+/* Popup Theme 14187: Enterprise Blue */
+.pum-theme-14187, .pum-theme-enterprise-blue { background-color: rgba( 255, 255, 255, 0.95 ) } 
+.pum-theme-14187 .pum-container, .pum-theme-enterprise-blue .pum-container { padding: 30px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14187 .pum-title, .pum-theme-enterprise-blue .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 32px; line-height: 36px } 
+.pum-theme-14187 .pum-content, .pum-theme-enterprise-blue .pum-content { color: #8c8c8c; font-family: inherit } 
+.pum-theme-14187 .pum-content + .pum-close, .pum-theme-enterprise-blue .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-size: 12px; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+/* Popup Theme 14188: Hello Box */
+.pum-theme-14188, .pum-theme-hello-box { background-color: rgba( 255, 255, 255, 1 ) } 
+.pum-theme-14188 .pum-container, .pum-theme-hello-box .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14188 .pum-title, .pum-theme-hello-box .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-14188 .pum-content, .pum-theme-hello-box .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-14188 .pum-content + .pum-close, .pum-theme-hello-box .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+/* Popup Theme 14189: Cutting Edge */
+.pum-theme-14189, .pum-theme-cutting-edge { background-color: rgba( 255, 255, 255, 1 ) } 
+.pum-theme-14189 .pum-container, .pum-theme-cutting-edge .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14189 .pum-title, .pum-theme-cutting-edge .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-14189 .pum-content, .pum-theme-cutting-edge .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-14189 .pum-content + .pum-close, .pum-theme-cutting-edge .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+/* Popup Theme 14190: Framed Border */
+.pum-theme-14190, .pum-theme-framed-border { background-color: rgba( 255, 255, 255, 1 ) } 
+.pum-theme-14190 .pum-container, .pum-theme-framed-border .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.pum-theme-14190 .pum-title, .pum-theme-framed-border .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-14190 .pum-content, .pum-theme-framed-border .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-14190 .pum-content + .pum-close, .pum-theme-framed-border .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+		
+		/*mõned stiilid lisanud Madis Kaaret*/
+		#calc {
+					/*width: auto;
+					border: 1px solid #00a2b7;
+					border-radius: 5px;*/
+    				padding: 10px;
+    				margin: 0px 0px 20px;
+
+    				font-family: "Trebuchet MS";
+				    color: #505050;
+				    font-size: 15px;
+				    font-weight: 400;
+				    line-height: 24px;
+				    margin-bottom: 1em;
+				}
+
+		.sinine {
+					color: #0094b3;
+				}
+
+		.suuremtekst {
+					font-size: 1.5em;
+		}
+
+		.vaiksemtekst {
+					font-size: 0.8em;
+		}
+
+		table {		
+					border: 1px solid #00a2b7;
+					padding: 5px 10px;
+					margin: 0px;
+					border-radius: 5px;
+		}
+		td {
+					/*border: 1px solid gray;*/
+					margin: 5px;
+					padding: 5px;
+		}
+
+		th {
+					text-align: left;
+		}
+
+		.hall {
+					color: red;
+		}
+
+        </style><link rel="alternate" href="http://tasku.ee/parkimine/" hreflang="et" />
+<link rel="alternate" href="http://tasku.ee/parking/" hreflang="en" />
+<link rel="alternate" href="http://tasku.ee/parking-rus/" hreflang="ru" />
+	<script>
+	$(function() {
+		$('.jcarousel').jcarousel({
+			// Configuration goes here
+		});
+		
+		$('.jcarousel-control-prev').jcarouselControl({
+			target: '-=1'
+		});
+	
+		$('.jcarousel-control-next').jcarouselControl({
+			target: '+=1'
+		});
+		
+		$('.jcarousel-pagination').jcarouselPagination({
+			item: function(page) {
+				return '<a class="pagination-button" href="#' + page + '"></a>';
+			}
+		});
+		
+		$(function() {
+				$('.jcarousel')
+					.jcarousel({
+					
+					});
+			});
+		
+		$(function(){
+			jQuery('.jcarousel-pagination')
+				   .on('jcarouselpagination:active', 'a', function() {
+						$(this).css('background', '#c02158');
+						$(this).css('border', '2px solid #c02158');
+						$(this).css('transition', 'background .5s');
+						$(this).css('transition', 'border .5s');
+					})
+					.on('jcarouselpagination:inactive', 'a', function() {
+						jQuery(this).css('background', 'transparent');
+						jQuery(this).css('border', '2px solid white');
+						jQuery(this).css('transition', 'background .5s');
+						jQuery(this).css('transition', 'border .5s');
+					})
+			});
+	});
+	$(function() {
+	    $('#kinokava').jcarousel({
+	        // Configuration goes here
+	    });
+	    $('.more-link.jcarousel-next').jcarouselControl({
+	        target: '+=1'
+	    });
+	    $('.more-link-prev.jcarousel-prev').jcarouselControl({
+	        target: '-=1'
+	    });
+	});
+	$(document).ready(function(){
+		$('.kaupluse-link').css('display', 'none');
+		$('.kaupluse-link').each(function(){
+			dataKorrus = $(this).data('floor');
+			if(dataKorrus == 'first'){
+				$(this).css('display', 'block');
+			}
+		});
+		$('.kaupluse-link').hover(function(){
+		
+			var postID = $(this).data('post-id');
+			var katID = $('#room-'+postID).data('kat-id');
+			
+			$('.keskuse-plaan-list li').removeClass('active');
+			$('.keskuse-plaan-list li#kat'+postID).addClass('active');
+			$('.default').not(".empty").each(function(){
+				var pKatId = $(this).data('kat-id');
+				$(this).attr('class', 'kat-'+pKatId+' default');
+				
+			});
+			$('#room-'+postID).not(".empty").attr("class", "default active kat-"+katID);
+			
+		});
+		$('.floor-box li').click(function(){
+			$('.plaan').css('display', 'none');
+			$('.kaupluse-link').css('display', 'none');
+			$('.floor-box li').removeClass('active');
+			$(this).addClass('active');
+			var korrus = $(this).data('floor');
+			
+			$('#'+korrus+'-floor').css('display', 'block');
+			$('.kaupluse-link').each(function(){
+				dataKorrus = $(this).data('floor');
+				if(dataKorrus == korrus){
+					$(this).css('display', 'block');
+				}
+			});
+		});
+		
+		$('.offer-category .plaan-li').click(function(){
+			var katID = $(this).data('kat-id');
+			
+			$('.offer-category .plaan-li').removeClass('offer-category-active');
+			
+			$(this).addClass('offer-category-active');
+			
+			$('.default').not(".empty").each(function(){
+				var pKatId = $(this).data('kat-id');
+				$(this).attr('class', 'kat-'+pKatId+' default');
+				
+			});
+			
+			$('.kat-'+katID).not(".empty").each(function(){
+			
+				$(this).attr('class', 'kat-'+katID+' active default');
+				
+			});
+			
+		});
+		$('.default').not(".empty").on('mouseenter', function(){
+			$('.default').each(function(){
+				var pKatId = $(this).data('kat-id');
+				$(this).attr('class', 'kat-'+pKatId+' default');
+				
+			});
+
+			var postID = $(this).data('post-id');
+			$('.keskuse-plaan-list li').removeClass('active');
+			$('.keskuse-plaan-list li#kat'+postID).addClass('active');
+		}).on('mouseleave', function(){
+			$('.keskuse-plaan-list li').removeClass('active');
+		});
+		$('.default').not(".empty").click(function(){
+			var postID = $(this).data('post-id');
+			var link = "http://tasku.ee";
+			window.location.href = link + "?p=" + postID;
+		});
+	});
+	</script>
+			<style>
+			.bottom-content{
+				min-height: 510px;
+			}
+		</style>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2650888-16");
+pageTracker._trackPageview();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class="et">
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '368106133341561',
+	      xfbml      : true,
+	      version    : 'v2.1'
+	    });
+	  };
+	
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="page">
+		<div class="container">
+			<div class="jcarousel-wrapper">
+				<div class="content relative">
+					<div class="top-left">
+					<a class="home-link" href="http://tasku.ee/" title="Tasku" rel="home">
+						<div class="logo">
+							<img src="http://tasku.ee/wp-content/themes/tasku/images/main-logo.png" height="33px" width="135px" style="border-style:none;" />
+						</div>
+					</a>
+					</div>	
+											<div class="logo-info">
+							<p>
+																	<strong>E-L</strong> 10.00 - 21.00,
+																									<strong>P</strong> 10.00 - 18.00																						</p>
+						</div>
+											<div class="top-right-wrapper">
+						<div class="top-right">
+							<div class="language">
+								<ul>
+										<li class="lang-item lang-item-2 lang-item-et current-lang"><a hreflang="et" href="http://tasku.ee/parkimine/">EST</a></li>
+	<li class="lang-item lang-item-8 lang-item-en"><a hreflang="en" href="http://tasku.ee/parking/">ENG</a></li>
+	<li class="lang-item lang-item-12 lang-item-ru"><a hreflang="ru" href="http://tasku.ee/parking-rus/">RUS</a></li>
+								</ul>
+							</div>
+							<div class="top-menu"><ul id="menu-top-small-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://tasku.ee/keskusest/">Taskust</a></li>
+<li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://tasku.ee/uudised/">Uudised</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="http://tasku.ee/kontakt/">Kontakt</a></li>
+</ul></div>							<div class="searchbox">
+								<form id="searchform" class="searchform" method="GET" action="http://tasku.ee">
+							         <input type="search" name="s" id="s" class="search" />
+							         <input type="submit" class="submitbutton" value="" />
+							     </form>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="jcarousel">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+					        </div>
+	        <div class="container">
+				<div class="content main page">
+				<div class="background-white">	
+					<div class="nav"><ul id="menu-main-menu" class="menu"><li id="menu-item-8155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8155"><a href="/">Avaleht</a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="http://tasku.ee/kaupluste-nimekiri/">Kauplused</a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="http://tasku.ee/keskuse-plaan/">Keskuse plaan</a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://tasku.ee/kinkekaart/">Tasku kinkekaart</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12 current_page_item menu-item-66"><a href="http://tasku.ee/parkimine/">Parkimine</a></li>
+<li id="menu-item-4066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4066"><a href="http://tasku.ee/stiilinoustamine/">Stiilinõustamine</a></li>
+</ul></div>				<div class="bottom-content">
+	<div class="content-left">
+		<div class="side-emailbox">
+	<form action="http://smaily.com/c/tasku/" class="side-emailform">
+				 <input type="submit" class="submitbutton" value="Liitu uudiskirjaga" />
+			</form>
+		</div>
+	</div>
+	<div class="content-right content-text">
+					<h1 class="bustimes-heading">Parkimine</h1>
+
+	<div id="calc">
+
+	<script>
+
+		function addNull(n){
+			if(n<10) n = '0' + n;
+			return n;
+		}
+
+		var i;
+		var selected = ' selected = "selected"';
+		var s = "";
+
+		var d = new Date();
+		var h = d.getHours();
+		var min = d.getMinutes();
+		var y = d.getFullYear();
+		var mth = 1 + d.getMonth();
+		var dt = d.getDate();
+
+		var tasu;
+		var info;
+		var tunnitasu = 1; //võiks teha ka konstandid
+		var oopaevatasu = 5;
+
+		var data = {
+			sth 	: h,
+			stmin 	: min,
+			stdt 	: dt,
+			stmth 	: mth,
+			sty 	: y,
+			endh 	: h + 1,
+			endmin 	: min,
+			enddt 	: dt,
+			endmth 	: mth,
+			endy 	: y,
+		}
+
+		
+
+	</script>
+	
+	<table>
+	<tr><th colspan="3"><span style="color: #0094b3;"><b>HINNAKALKULAATOR</b></span></th></tr>
+	<tr><td>
+	Parkimise algus:</td><td>
+	<select id = "sth" class="suuremtekst">
+		<script>
+			for (i=0; i < 24; i++){
+				if (i == h) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select>:
+	<select id = "stmin" class="suuremtekst">:>
+		<script>
+			for (i=0; i < 60; i++){
+				if (i == min) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select></td><td>
+
+	<select id="stdt">
+		<script>
+			for (i=1; i <= 31; i++){
+				if (i == dt) s = selected;
+				else s = '';
+				document.write("<option" + s  + "><span class=\"hall\">" + addNull(i) + "</span></option>");
+			}
+		</script>
+	</select>/
+	<select id="stmth">
+		<script>
+			for (i=1; i <= 12; i++){
+				if (i == mth) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select>/
+	<select id="sty">
+		<script>
+			for (i=y; i <= y+1; i++){
+				if (i == y) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select></td></tr><tr><td>
+
+	Parkimise lõpp:</td><td>
+	<select id="endh" class="suuremtekst">
+		<script>
+			for (i=0; i < 24; i++){
+				if (i == h+1) s = selected;
+				else s = '';
+				document.write("<option" + s  + " value=\"" + i + "\">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select>:
+	<select id="endmin" class="suuremtekst">
+		<script>
+			for (i=0; i < 60; i++){
+				if (i == min) s = selected;
+				else s = '';
+				document.write("<option" + s  + " value=\"" + i + "\">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select></td><td>
+
+	<select id="enddt">
+		<script>
+			for (i=1; i <= 31; i++){
+				if (i == dt) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select>/
+	<select id="endmth">
+		<script>
+			for (i=1; i <= 12; i++){
+				if (i == mth) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select>/
+	<select id="endy">
+		<script>
+			for (i=y; i <= y+1; i++){
+				if (i == y) s = selected;
+				else s = '';
+				document.write("<option" + s  + ">" + addNull(i) + "</option>");
+			}
+		</script>
+	</select></td></tr>
+
+	<tr><td colspan="3">
+		Teie parkimisaeg on <span id="parktund"></span> h ja <span id="parkmin"></span> min. <b style="color: #0094b3;">Pakimise tasu <span id="tasu"></span> €<b>
+	</td></tr>
+	<tr><td colspan="3">
+		<span id="info" class="vaiksemtekst" style="color: #c12159"></span>
+	</td></tr>
+
+	</table>
+
+	</div>
+
+
+			<p><span style="color: #0094b3;"><strong>PARKIMISMAJA LAHTIOLEKUAJAD</strong></span><br />
+• 2.-4. korruse parkla avatud 24 h<br />
+• keldrikorruse parkla avatud 07:00-23:00</p>
+<p><span style="color: #0094b3;"><strong>SISSE- JA VÄLJASÕIDUD</strong></span><br />
+• korrusparkla sissesõidud Riia-Turu ristmikult ja Soola tänavalt Dorpati hotelli eest. Väljasõit Soola ja Vana-Turu tänavatele<br />
+• keldrikorruse parkla sisse- ja väljasõit Soola tänavalt</p>
+<p><span style="color: #0094b3;"><strong>TASU</strong></span><br />
+• esimene tund parkimist tasuta, iga järgmine alustatud tund 1 €<br />
+• 24 h pilet 5 €<br />
+• ööpäevaringne kuukaart 80 €/kuu (saab alustada ka kuu keskelt), tellimine <a title="Europark" href="http://www.europark.ee" target="_blank">www.europark.ee</a> ja tasumine arve alusel<br />
+• kaotatud pileti tasu 16 €</p>
+<p><span style="color: #0094b3;"><strong>MAKSMINE</strong></span><br />
+• makseautomaadid asuvad igal parklakorrusel (tasumine sularahas)<br />
+• kaardimaksed 2., 3. ja 0-korruse makseautomaatides</p>
+<p>Parkimist korraldab <strong>OÜ EuroPark Estonia</strong>. Lisainformatsiooni parkimistingimuste ja parkimiskorralduse kohta saab EuroParki koduleheküljelt <a title="Europark" href="http://www.europark.ee" target="_blank">www.europark.ee</a>.<br />
+Üldnumber on <strong>+372 661 0223</strong> &#8211; töötab 24 h.</p>
+<p>&nbsp;</p>
+<p><a href="http://tasku.ee/wp-content/uploads/2014/07/parkla_sissesoit.png"><img class="alignnone size-full wp-image-12735" src="http://tasku.ee/wp-content/uploads/2014/07/parkla_sissesoit.png" alt="parkla_sissesoit" width="665" height="433" /></a></p>
+			</div>
+							<div class="bottom-menu alumine-menu"><ul id="menu-footer-menu" class="menu"><li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-60"><a href="http://tasku.ee/keskusest/">Taskust</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://tasku.ee/kontakt/">Kontakt</a></li>
+<li id="menu-item-14380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14380"><a href="http://tasku.ee/kauplused/konverentsikeskus/">Konverentsikeskus</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a href="http://tasku.ee/burood/">Bürood</a></li>
+<li id="menu-item-5208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5208"><a href="http://tasku.ee/tartu-teerajajate-allee/">Tartu Teerajajate Allee</a></li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://tasku.ee/vaateplatvorm/">Vaateplatvorm</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="http://tasku.ee/pildid/">Galeriid</a></li>
+<li id="menu-item-4067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4067"><a href="http://tasku.ee/bussiajad/">Bussiajad</a></li>
+</ul></div>						</div>
+					</div>
+					<div class="content footer">
+						<div class="footer-upper">
+							<a href="http://tasku.ee/" title="Tasku" rel="home"><img class="bottom-mini-logo" src="http://tasku.ee/wp-content/themes/tasku/images/logo-blue-small.png" height="25px" width="103px" /></a>
+							<p>© Tasku Keskus AS / Turu 2, 51014 Tartu  / <span class="mini-phone">  +372 731 22 11  /</span> <span class="mini-envelope"> e-mail: <a href="mailto:info[a]tasku.ee" class="footer-mail">info[a]tasku.ee</a></span></p>
+														<a class="more-link" href="http://tasku.ee/kontaktivorm/">SAADA MEILE KIRI</a>
+													</div>
+						<div class="footer-lower">
+							<ul>
+																<li>
+									<h3>Tasku keskus:</h3>
+									<p>E-L 10.00 - 21.00,<br />
+P 10.00 - 18.00</p>
+								</li>
+																<li>
+									<h3>Apteek:</h3>
+									<p>E-R 9.00 - 21.00,<br />
+L 10.00-21.00,<br />
+P 10.00-18.00</p>
+								</li>
+																<li>
+									<h3>RIMI:</h3>
+									<p>E-P 8.00 - 23.00</p>
+								</li>
+																<li>
+									<h3>Cinamon kinokeskus:</h3>
+									<p>avatakse 30 min<br />
+enne 1. seansi algust</p>
+								</li>
+																<li>
+									<h3>Olympic Casino:</h3>
+									<p>avatud 24 h</p>
+								</li>
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel='stylesheet' id='wp-pagenavi-css'  href='http://tasku.ee/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://tasku.ee/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/tasku.ee\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://tasku.ee/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.9.3'></script>
+
+<script>
+	
+	$("select").change(function(){
+		
+		data[$(this).attr('id')] = Number($(this).val());
+		calculate();
+		console.log(data);
+	});
+
+	function calculate(){
+		
+		var stdate = new Date(data.sty, data.stmth, data.stdt, data.sth, data.stmin);
+		var enddate = new Date(data.endy, data.endmth, data.enddt, data.endh, data.endmin);
+		var period = (enddate - stdate) / 1000 / 60;
+		if(period < 0) period = 0;
+
+		var tunnid = Math.floor(period);
+		var parktund = Math.floor(period / 60);
+		var parkmin = period % 60;
+
+
+		$("#parktund").text(parktund);
+		$("#parkmin").text(parkmin);
+
+		$("#parkaeg").text(tunnid);
+
+		if(period <= 60){
+			tasu = 0;
+			info = "Esimene tund parkimist on tasuta, iga järgmine alustatud tund 1 €";
+		} else if (period >= 300) {
+			if(period > 1440){
+				tasu = Math.ceil((period / 1440)) * oopaevatasu;
+				info = "24 h pilet 5 €. Ööpäevaringne kuukaart 80 €/kuu";
+			} else {
+				tasu = oopaevatasu;
+				info = "24 h pilet 5 €. Ööpäevaringne kuukaart 80 €/kuu";
+			}
+		} else {
+			//kuna tund on 1 euro siis kasutame lihtsustatud lähenemist, muidu kasutaks kordajat
+			tasu = Math.ceil((period - 60)/60);
+			info = "Esimene tund tasuta, iga järgmine alustatud tund 1 €. 24 h pilet 5 €";
+		}
+		$("#tasu").text(tasu);
+		$("#info").text(info);
+
+	}
+
+	//kui leht laeb, siis arvutatakse etteantud tunni hind alates hetke kellaajast
+	$( document ).ready(function() {
+    	calculate();
+	});
+
+</script>
+
+</body>
+</html>
